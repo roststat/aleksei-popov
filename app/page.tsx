@@ -1,29 +1,42 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Home() {
   return (
     <div className="max-w-6xl mx-auto px-4">
       {/* Hero */}
-      <section className="py-24 md:py-36">
-        <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-6">
-          Алексей Попов
-        </h1>
-        <p className="text-xl text-neutral-500 max-w-2xl mb-10">
-          Здесь собраны мои проекты, видеоматериалы, статьи и личный блог.
-        </p>
-        <div className="flex flex-wrap gap-4">
-          <Link
-            href="/about"
-            className="px-6 py-3 bg-neutral-900 text-white text-sm font-medium rounded-lg hover:bg-neutral-700 transition-colors"
-          >
-            О себе
-          </Link>
-          <Link
-            href="/projects"
-            className="px-6 py-3 border border-neutral-300 text-sm font-medium rounded-lg hover:border-neutral-900 transition-colors"
-          >
-            Проекты
-          </Link>
+      <section className="py-24 md:py-36 flex flex-col md:flex-row md:items-center gap-12">
+        <div className="flex-1">
+          <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-6">
+            Алексей Попов
+          </h1>
+          <p className="text-xl text-neutral-500 max-w-2xl mb-10">
+            Здесь собраны мои проекты, видеоматериалы, статьи и личный блог.
+          </p>
+          <div className="flex flex-wrap gap-4">
+            <Link
+              href="/about"
+              className="px-6 py-3 bg-neutral-900 text-white text-sm font-medium rounded-lg hover:bg-neutral-700 transition-colors"
+            >
+              О себе
+            </Link>
+            <Link
+              href="/projects"
+              className="px-6 py-3 border border-neutral-300 text-sm font-medium rounded-lg hover:border-neutral-900 transition-colors"
+            >
+              Проекты
+            </Link>
+          </div>
+        </div>
+        <div className="md:w-72 lg:w-80 shrink-0">
+          <Image
+            src="/aleksei-popov.png"
+            alt="Алексей Попов"
+            width={400}
+            height={500}
+            className="rounded-2xl object-cover w-full h-auto shadow-lg"
+            priority
+          />
         </div>
       </section>
 
