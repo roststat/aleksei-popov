@@ -6,6 +6,16 @@ export default function Home() {
     <div className="max-w-6xl mx-auto px-4">
       {/* Hero */}
       <section className="py-24 md:py-36 flex flex-col md:flex-row md:items-center gap-12">
+        <div className="md:w-72 lg:w-80 shrink-0">
+          <Image
+            src="/aleksei-popov.png"
+            alt="Алексей Попов"
+            width={400}
+            height={500}
+            className="rounded-2xl object-cover w-full h-auto shadow-lg"
+            priority
+          />
+        </div>
         <div className="flex-1">
           <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-6">
             Алексей Попов
@@ -27,16 +37,6 @@ export default function Home() {
               Проекты
             </Link>
           </div>
-        </div>
-        <div className="md:w-72 lg:w-80 shrink-0">
-          <Image
-            src="/aleksei-popov.png"
-            alt="Алексей Попов"
-            width={400}
-            height={500}
-            className="rounded-2xl object-cover w-full h-auto shadow-lg"
-            priority
-          />
         </div>
       </section>
 
