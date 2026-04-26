@@ -81,9 +81,9 @@ export default function GruppaGodnostiPage() {
       </section>
 
       {/* Первая цитата — на всю ширину */}
-      <section className="bg-neutral-950 text-white">
+      <section className="border-b border-neutral-200">
         <div className="max-w-5xl mx-auto px-4 py-16 md:py-20">
-          <p className="text-2xl md:text-4xl font-medium leading-relaxed max-w-3xl">
+          <p className="text-2xl md:text-4xl font-medium leading-relaxed max-w-3xl text-neutral-800">
             «Первый раз я подумал — всё… Я даже не вспомнил флаг. Я вспомнил маму…»
           </p>
           <p className="text-neutral-400 mt-6 text-sm">— Алексей Попов (Тихий)</p>
