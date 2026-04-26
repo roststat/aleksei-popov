@@ -1,11 +1,15 @@
 "use client";
 
 import Image from "next/image";
-import { useState } from "react";
 import { Video } from "@/data/videos";
 
-export default function VideoCard({ video }: { video: Video }) {
-  const [playing, setPlaying] = useState(false);
+interface VideoCardProps {
+  video: Video;
+  playing: boolean;
+  onPlay: () => void;
+}
+
+export default function VideoCard({ video, playing, onPlay }: VideoCardProps) {
 
   const thumb = video.youtubeId
     ? `https://i.ytimg.com/vi/${video.youtubeId}/hqdefault.jpg`
@@ -29,7 +33,7 @@ export default function VideoCard({ video }: { video: Video }) {
           />
         ) : (
           <button
-            onClick={() => setPlaying(true)}
+            onClick={onPlay}
             className="group absolute inset-0 w-full h-full"
             aria-label={`Смотреть: ${video.title}`}
           >

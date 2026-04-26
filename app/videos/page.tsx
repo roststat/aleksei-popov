@@ -1,5 +1,4 @@
-import { videos } from "@/data/videos";
-import VideoCard from "@/components/VideoCard";
+import VideoList from "@/components/VideoList";
 
 export default function VideosPage() {
   return (
@@ -22,15 +21,7 @@ export default function VideosPage() {
         </a>
       </div>
 
-      {videos.length === 0 ? (
-        <p className="text-neutral-400">Видео скоро появятся.</p>
-      ) : (
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
-          {videos.map((video) => (
-            <VideoCard key={video.id} video={video} />
-          ))}
-        </div>
-      )}
+      <VideoList />
     </div>
   );
 }
