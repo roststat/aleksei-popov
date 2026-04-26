@@ -66,7 +66,7 @@ export default function GruppaGodnostiPage() {
           </p>
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 max-w-2xl">
             {[
-              { label: "Жанр", value: "verbatim-театр" },
+              { label: "Жанр", value: "Вербатим-театр" },
               { label: "Форма", value: "1 актёр + хор" },
               { label: "Хронометраж", value: "55 минут" },
               { label: "Основа", value: "Письма с фронта" },
