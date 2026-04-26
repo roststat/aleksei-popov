@@ -121,18 +121,18 @@ export default function GruppaGodnostiPage() {
       </section>
 
       {/* Witness */}
-      <section className="mb-16 bg-neutral-950 text-white rounded-2xl p-8 md:p-10">
+      <section className="mb-16 border border-neutral-200 rounded-2xl p-8 md:p-10">
         <p className="text-xs font-medium uppercase tracking-widest text-neutral-400 mb-4">Свидетель</p>
         <h3 className="text-xl font-bold mb-4">
           Попов Алексей Валерьевич. Позывной — Тихий.
         </h3>
-        <p className="text-neutral-300 leading-relaxed mb-4">
+        <p className="text-neutral-600 leading-relaxed mb-4">
           Его не брали. Группа годности «В» — нельзя. Он настоял. Прошёл повторные комиссии. Отжимался. Бегал. Сколько скажут. Добился «А1». Ушёл добровольно. Никто не заставлял.
         </p>
-        <p className="text-neutral-300 leading-relaxed mb-6">
+        <p className="text-neutral-600 leading-relaxed mb-6">
           С июля 2023 — на СВО. Наводчик. Командир расчёта. Командир миномётного взвода. Часов Яр, Донбасс.
         </p>
-        <p className="text-sm text-red-400 font-medium">
+        <p className="text-sm text-red-600 font-medium">
           Этот спектакль создавался пока брат был на фронте.
         </p>
       </section>
