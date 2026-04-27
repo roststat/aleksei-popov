@@ -6,6 +6,15 @@ const nextConfig: NextConfig = {
       { protocol: "https", hostname: "i.ytimg.com" },
     ],
   },
+  async redirects() {
+    return [
+      {
+        source: "/projects/gruppa-godnosti/realozator",
+        destination: "/projects/gruppa-godnosti/rezhisser",
+        permanent: true,
+      },
+    ];
+  },
 };
 
 export default nextConfig;
